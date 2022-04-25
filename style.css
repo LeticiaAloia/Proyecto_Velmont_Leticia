@@ -10,12 +10,20 @@
 html {
     font-size: 19px;
 }
+
 /* Variables. */
 /* :root {
     --colorGeneral:
     --tamanioImagen:
 } */
 
+h1, h2, h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
 
 .fondo-gradiente {
     background-image: url(media/fondo_velmont_gradiente.webp);
@@ -31,11 +39,26 @@ html {
     background-attachment: fixed; 
 }
 
-
-.parrafo-presentacion {
+.parrafo-presentacion, .parrafo-general {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
+    
+}
+.parrafo-presentacion{
     text-align: center;
+    background-color: rgba(58, 42, 42, 0.712);
+}
+.parrafo-general {
+    text-align: left;
+}
+
+.historia {
+    border: 2px, solid, white;
+}
+
+.lista-servicios{
+    list-style-type: none;
+    color: white;
     background-color: rgba(58, 42, 42, 0.712);
 }
