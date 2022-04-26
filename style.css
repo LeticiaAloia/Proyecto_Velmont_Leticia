@@ -62,3 +62,29 @@ p {
     color: white;
     background-color: rgba(58, 42, 42, 0.712);
 }
+
+.promo1, .promo2, .promo3, .promo4 {
+    font-size: 1rem;
+}
+
+.promo1 {
+    transition: all 1.8s linear;
+}
+.promo2 {
+    transition: all 1.8s ease-in;
+}
+.promo3 {
+    transition: all 1.8s ease-in-out;
+}
+.promo4 {
+    transition: all 1.8s ease-out;
+}
+
+.contenedor-promo:hover .promo1,
+.contenedor-promo:hover .promo2,
+.contenedor-promo:hover .promo3,
+.contenedor-promo:hover .promo4 {
+    transform: translateX(5rem);
+}
+
+
