@@ -17,14 +17,17 @@ html {
     --tamanioImagen:
 } */
 
+/* H */
 h1, h2, h3 {
     color: white;
 }
 
+/* Párrafos */
 p {
     color: white;
 }
 
+/* Fondo del sitio. */
 .fondo-gradiente {
     background-image: url(media/fondo_velmont_gradiente.webp);
     background-size: cover;
@@ -32,6 +35,7 @@ p {
     background-attachment: fixed;
 }
 
+/* Fondo secciones, foto decorativa. */
 .presentacion {
     background-image: url(media/fondo_velmont_elementos.webp);
     background-size: cover;
@@ -39,6 +43,7 @@ p {
     background-attachment: fixed; 
 }
 
+/* Párrafos */
 .parrafo-presentacion, .parrafo-general {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -57,16 +62,17 @@ p {
     border: 2px, solid, white;
 }
 
+/* Lista de servicios */
 .lista-servicios{
     list-style-type: none;
     color: white;
     background-color: rgba(58, 42, 42, 0.712);
 }
 
+/* Textos animados de promo */
 .promo1, .promo2, .promo3, .promo4 {
     font-size: 1rem;
 }
-
 .promo1 {
     transition: all 1.8s linear;
 }
@@ -85,6 +91,16 @@ p {
 .contenedor-promo:hover .promo3,
 .contenedor-promo:hover .promo4 {
     transform: translateX(5rem);
+}
+
+/* Fotos de clientes. */
+.cliente {
+    width: 300px;
+    height: auto;
+    transition: all 1s;
+}
+.cliente:hover {
+    opacity: 50%;
 }
 
 
