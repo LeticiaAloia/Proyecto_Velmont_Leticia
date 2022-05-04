@@ -1,3 +1,7 @@
+/* Google fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Judson&family=Poppins:wght@500&display=swap');
+
+
 /* Reseteo. */
 * {
     margin: 0;
@@ -8,23 +12,13 @@
 }
 /* Rem. */
 html {
-    font-size: 19px;
+    font-size: 15px;
 }
-
-/* Variables. */
-/* :root {
-    --colorGeneral:
-    --tamanioImagen:
-} */
 
 /* H */
 h1, h2, h3 {
     color: white;
-}
-
-/* Párrafos */
-p {
-    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Fondo del sitio. */
@@ -46,8 +40,8 @@ p {
 /* Párrafos */
 .parrafo-presentacion, .parrafo-general {
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
+    font-family: 'Judson', serif;
+    font-size: 1.5rem;
     
 }
 .parrafo-presentacion{
@@ -62,16 +56,33 @@ p {
     border: 2px, solid, white;
 }
 
+.servicios {
+    background-image: url(media/minibar_velmont.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
 /* Lista de servicios */
 .lista-servicios{
     list-style-type: none;
     color: white;
     background-color: rgba(58, 42, 42, 0.712);
+    font-family: 'Poppins', sans-serif;
+}
+
+.efectivo {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
 }
 
 /* Textos animados de promo */
 .promo1, .promo2, .promo3, .promo4 {
-    font-size: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Judson';
+    font-weight: bold;
 }
 .promo1 {
     transition: all 1.8s linear;
@@ -94,13 +105,21 @@ p {
 }
 
 /* Fotos de clientes. */
-.cliente {
-    width: 300px;
-    height: auto;
+.cliente-v, .cliente-h {
+    margin: 10px;
     transition: all 1s;
+    box-shadow: 2px 2px 2px rgb(119, 87, 6);
 }
-.cliente:hover {
-    opacity: 50%;
+.cliente-v:hover, .cliente-h:hover {
+    transform: scale(1.3);
+}
+.cliente-v {
+    width: 290px;
+    height: auto;
+}
+.cliente-h {
+    width: 400px;
+    height: auto;
 }
 
 
